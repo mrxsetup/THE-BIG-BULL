@@ -1,214 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE BIG BULL (CRICKET_ANALYST)</title>
 
-    <!-- Meta Pixel Code -->
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }
-        (window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1183539050152137');
-        fbq('track', 'PageView');
-    </script>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
 
-    <noscript>
+<!-- META PIXEL CODE -->
+<script>
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;
+n=f.fbq=function(){
+n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)
+};
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2009666809876899');
+fbq('track','PageView');
+</script>
+
+<noscript>
 <img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1183539050152137&ev=PageView&noscript=1"/>
+src="https://www.facebook.com/tr?id=2009666809876899&ev=PageView&noscript=1"/>
 </noscript>
-    <!-- End Meta Pixel Code -->
+<!-- END META PIXEL -->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garud Fixer (Baazigar)</title>
-
-    <!-- Preload background for faster render -->
-    <link rel="preload" as="image" href="https://applescoop.org/image/wallpapers/iphone/iphone-dark-black-and-blue-abstract-impede-depth-effect-with-think-lines-apple-iphone-21-09-2025-1758398684-hd-wallpaper.webp">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-        }
-
-        body {
-            background: #0c0f1a url("https://applescoop.org/image/wallpapers/iphone/iphone-dark-black-and-blue-abstract-impede-depth-effect-with-think-lines-apple-iphone-21-09-2025-1758398684-hd-wallpaper.webp") center/cover no-repeat fixed;
-            color: #fff;
-            min-height: 100vh;
-        }
-
-        .overlay {
-            background: rgba(10, 12, 22, .82);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 420px;
-            margin: auto;
-            padding: 20px 15px 90px;
-        }
-
-        /* Profile */
-
-        .profile-box {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .profile-box img {
-            width: 95px;
-            height: 95px;
-            border-radius: 50%;
-            border: 2px solid #ffffff55;
-        }
-
-        .profile-box h1 {
-            margin-top: 10px;
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-
-        /* Card */
-
-        .card {
-            background: #ffffff12;
-            border: 1px solid #ffffff20;
-            border-radius: 12px;
-            padding: 16px;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        /* Button */
-
-        .btn {
-            display: block;
-            margin-top: 14px;
-            padding: 14px;
-            border-radius: 30px;
-            background: #1fa2ff;
-            color: #fff;
-            font-weight: 700;
-            text-decoration: none;
-        }
-
-        /* Features */
-
-        .features {
-            list-style: none;
-            margin-top: 8px;
-        }
-
-        .features li {
-            font-size: .95rem;
-            margin: 6px 0;
-        }
-
-        .features li::before {
-            content: "✓ ";
-            color: #4caf50;
-        }
-
-        /* Footer */
-
-        .footer {
-            text-align: center;
-            font-size: .85rem;
-            opacity: .85;
-        }
-
-        .footer a {
-            color: #6bd4ff;
-            text-decoration: none;
-        }
-
-        /* Bottom CTA */
-
-        .bottom-bar {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: #000000cc;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .bottom-bar a {
-            display: inline-block;
-            width: 90%;
-            max-width: 320px;
-            padding: 14px;
-            border-radius: 30px;
-            background: #12d8fa;
-            color: #000;
-            font-weight: 700;
-            text-decoration: none;
-        }
-    </style>
+<style>
+.neon-box{display:inline-block;padding:12px 22px;border-radius:14px;border:2px solid #00faff;box-shadow:0 0 10px #00faff,0 0 25px #00faff;animation:neonGlow 2s infinite alternate}
+@keyframes neonGlow{from{box-shadow:0 0 10px #00faff}to{box-shadow:0 0 35px #00faff}}
+.neon-text{font-weight:900;font-size:1.8rem;color:#fff;text-shadow:0 0 6px #00faff,0 0 12px #00faff}
+.sub-text{font-weight:800;color:#ffb300;text-shadow:0 0 8px rgba(255,179,0,.8)}
+.mirror-wrap{position:relative;width:140px;height:140px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at top,#444,#000 70%);box-shadow:inset 0 8px 15px rgba(255,255,255,.2),inset 0 -10px 20px rgba(0,0,0,.9),0 0 25px rgba(0,255,255,.6)}
+.mirror-wrap::before{content:"";position:absolute;inset:-6px;border-radius:50%;background:conic-gradient(#00faff,#ff00ff,#00ff6a,#00faff);animation:spin 4s linear infinite;filter:blur(2px);z-index:-1}
+@keyframes spin{to{transform:rotate(360deg)}}
+.mirror-img{width:120px;height:120px;border-radius:50%;object-fit:cover}
+.neon-btn{background:#00faff;color:#ff003c;padding:14px 22px;border-radius:14px;font-weight:900;box-shadow:0 0 15px #00faff,0 0 35px #00faff;animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 15px #00faff}50%{box-shadow:0 0 45px #00faff}}
+.overlay{position:absolute;inset:0;background:rgba(0,0,0,.45)}
+.ads-credit{font-size:10px;letter-spacing:1px;color:#00faff;text-shadow:0 0 5px #00faff,0 0 10px #00faff;opacity:.9}
+</style>
 </head>
 
-<body>
-    <div class="overlay">
+<body class="bg-black text-white">
 
-        <div class="container">
+<div class="relative h-screen flex items-center justify-center bg-cover bg-center"
+style="background-image:url('https://github.com/mrxsetup/THE-BIG-BULL/blob/main/BIGBULLIMAGE.jpg?raw=true');">
 
-            <div class="profile-box">
-                <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/6952a267b21b7_40bb2f3d-25fd-484d-9b63-a8468a701820.jfif" alt="Garud Fixer">
-                <h1>Garud Fixer (Baazigar)</h1>
-            </div>
+<div class="overlay"></div>
 
-            <div class="card">
-                <h2>Cricket Match Predictions</h2>
-                <p style="opacity:.9;">Well researched match insights & analysis</p>
-                <a href="https://t.me/+9WnufKITJK9lM2I1" class="btn">Join Free Telegram Channel</a>
-            </div>
+<div class="relative z-10 text-center px-6 w-full flex flex-col items-center">
 
-            <div class="card">
-                <h2>What You Get</h2>
-                <ul class="features">
-                    <li>Match & Toss Analysis</li>
-                    <li>Team Performance Insights</li>
-                    <li>Daily Free Updates</li>
-                    <li>Simple & Clean Info</li>
-                </ul>
-            </div>
+  <div class="neon-box mt-4">
+    <div class="neon-text">THE BIG BULL</div>
+  </div>
 
-            <div class="card">
-                <p style="opacity:.9;">
-                    Trusted by thousands of cricket lovers across India.
-                </p>
-            </div>
+  <div class="mt-2 sub-text">(CRICKET_ANALYST)</div>
 
-            <div class="footer">
-                Marketing by :
-                <a href="https://t.me/+lpl9wSvnR3YyZjA1">QB Agency™</a>
-            </div>
-
-        </div>
-
-        <div class="bottom-bar">
-            <a href="https://t.me/+9WnufKITJK9lM2I1">अभी टेलीग्राम जॉइन करें</a>
-        </div>
-
+  <div class="mt-5">
+    <div class="mirror-wrap">
+      <img src="https://github.com/mrxsetup/THE-BIG-BULL/blob/main/BIGBULLIMAGE.jpg?raw=true" class="mirror-img">
     </div>
-</body>
+  </div>
 
+  <p class="mt-4 text-2xl font-extrabold">
+    Join Now <span id="countdown" class="text-yellow-400 text-4xl">30</span> Seconds
+  </p>
+
+  <p class="mt-3 text-base font-bold">
+    Join Karo Enjoy Daily Cricket Prediction 👇
+  </p>
+
+  <div class="mt-8">
+    <a href="https://t.me/+vIeU26SoIvhiNTE1">
+      <button class="neon-btn">JOIN THE BIG BULL TELEGRAM</button>
+    </a>
+  </div>
+
+  <p class="mt-4 text-sm font-extrabold uppercase">
+    💸 THE BIG BULL <br> Cricket Tipping Ka Sher 🐂👑
+  </p>
+
+  <div class="mt-auto pt-4 pb-2 ads-credit">ADS_SETUP BY @MRXSETUP</div>
+</div>
+</div>
+
+<script>
+let t=30,el=document.getElementById("countdown");
+let i=setInterval(()=>{
+  el.textContent=t;
+  t--;
+  if(t<0){
+    clearInterval(i);
+    el.textContent="0";
+  }
+},1000);
+</script>
+
+</body>
 </html>
