@@ -3,109 +3,160 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>THE BIG BULL (CRICKET_ANALYST)</title>
+<title>THE BIG BULL - Premium Portfolio</title>
 
-<!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
-<!-- META PIXEL CODE -->
+<script>
+tailwind.config = {
+theme: {
+extend: {
+fontFamily: { sans: ['Poppins', 'sans-serif'] }
+}
+}
+}
+</script>
+
+<style>
+@keyframes gradient {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+background-size: 200% 200%;
+animation: gradient 5s ease infinite;
+}
+
+.glass {
+background: rgba(0,0,0,0.4);
+backdrop-filter: blur(22px);
+border: 1px solid rgba(255,255,255,0.15);
+}
+
+.glow {
+box-shadow: 0 0 35px rgba(255,180,0,.7), 0 0 90px rgba(255,80,0,.45);
+}
+
+.pulse-btn {
+animation: pulse 1.6s infinite;
+}
+
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.06); }
+100% { transform: scale(1); }
+}
+
+.shine:hover {
+filter: brightness(1.2);
+transform: scale(1.05);
+transition: .3s;
+}
+</style>
+
+<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s){
-if(f.fbq)return;
-n=f.fbq=function(){
-n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)
-};
-if(!f._fbq)f._fbq=n;
-n.push=n;
-n.loaded=!0;
-n.version='2.0';
-n.queue=[];
-t=b.createElement(e);
-t.async=!0;
-t.src=v;
-s=b.getElementsByTagName(e)[0];
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)
 }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
 fbq('init','933688235777642');
 fbq('track','PageView');
 </script>
-
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=933688235777642&ev=PageView&noscript=1"/>
-</noscript>
-<!-- END META PIXEL -->
-
-<style>
-.neon-box{display:inline-block;padding:12px 22px;border-radius:14px;border:2px solid #00faff;box-shadow:0 0 10px #00faff,0 0 25px #00faff;animation:neonGlow 2s infinite alternate}
-@keyframes neonGlow{from{box-shadow:0 0 10px #00faff}to{box-shadow:0 0 35px #00faff}}
-.neon-text{font-weight:900;font-size:1.8rem;color:#fff;text-shadow:0 0 6px #00faff,0 0 12px #00faff}
-.sub-text{font-weight:800;color:#ffb300;text-shadow:0 0 8px rgba(255,179,0,.8)}
-.mirror-wrap{position:relative;width:140px;height:140px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at top,#444,#000 70%);box-shadow:inset 0 8px 15px rgba(255,255,255,.2),inset 0 -10px 20px rgba(0,0,0,.9),0 0 25px rgba(0,255,255,.6)}
-.mirror-wrap::before{content:"";position:absolute;inset:-6px;border-radius:50%;background:conic-gradient(#00faff,#ff00ff,#00ff6a,#00faff);animation:spin 4s linear infinite;filter:blur(2px);z-index:-1}
-@keyframes spin{to{transform:rotate(360deg)}}
-.mirror-img{width:120px;height:120px;border-radius:50%;object-fit:cover}
-.neon-btn{background:#00faff;color:#ff003c;padding:14px 22px;border-radius:14px;font-weight:900;box-shadow:0 0 15px #00faff,0 0 35px #00faff;animation:pulse 1.8s infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 15px #00faff}50%{box-shadow:0 0 45px #00faff}}
-.overlay{position:absolute;inset:0;background:rgba(0,0,0,.45)}
-.ads-credit{font-size:10px;letter-spacing:1px;color:#00faff;text-shadow:0 0 5px #00faff,0 0 10px #00faff;opacity:.9}
-</style>
 </head>
 
-<body class="bg-black text-white">
+<body class="bg-black min-h-screen text-white">
 
-<div class="relative h-screen flex items-center justify-center bg-cover bg-center"
-style="background-image:url('https://github.com/mrxsetup/THE-BIG-BULL/blob/main/BIGBULLIMAGE.jpg?raw=true');">
+<!-- Background -->
+<div class="fixed inset-0">
+<img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=2000" class="w-full h-full object-cover opacity-35">
+<div class="absolute inset-0 bg-gradient-to-br from-yellow-900/90 via-black/70 to-orange-900/90"></div>
+</div>
 
-<div class="overlay"></div>
+<div class="relative z-10 flex justify-center items-center min-h-screen p-4">
 
-<div class="relative z-10 text-center px-6 w-full flex flex-col items-center">
+<div class="glass max-w-lg w-full rounded-[2rem] p-7 shadow-2xl">
 
-  <div class="neon-box mt-4">
-    <div class="neon-text">THE BIG BULL</div>
-  </div>
+<!-- HEADER -->
+<div class="text-center mb-6">
+<h1 class="text-5xl font-black animate-gradient bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 text-transparent bg-clip-text">
+THE BIG BULL
+</h1>
+<p class="text-gray-300 mt-2">Premium Cricket Predictions</p>
+</div>
 
-  <div class="mt-2 sub-text">(CRICKET_ANALYST)</div>
+<!-- PROFILE -->
+<div class="flex gap-4 bg-white/5 p-5 rounded-xl border border-white/10 mb-6">
 
-  <div class="mt-5">
-    <div class="mirror-wrap">
-      <img src="https://github.com/mrxsetup/THE-BIG-BULL/blob/main/BIGBULLIMAGE.jpg?raw=true" class="mirror-img">
-    </div>
-  </div>
+<div class="w-24 h-24 rounded-xl bg-gradient-to-r from-yellow-500 to-red-500 p-[3px] glow">
+<img src="https://github.com/mrxsetup/realmaskman01/blob/main/MASK.jpg?raw=true" 
+class="rounded-xl w-full h-full object-cover">
+</div>
 
-  <p class="mt-4 text-2xl font-extrabold">
-    Join Now <span id="countdown" class="text-yellow-400 text-4xl">30</span> Seconds
-  </p>
+<div class="flex-1">
+<div class="flex gap-2 mb-2">
+<span class="px-3 py-1 bg-yellow-600 rounded-full text-xs font-bold">⭐ Premium Analyst</span>
+<span class="px-3 py-1 bg-red-600 rounded-full text-xs font-bold">LIVE</span>
+</div>
 
-  <p class="mt-3 text-base font-bold">
-    Join Karo Enjoy Daily Cricket Prediction 👇
-  </p>
+<p class="text-yellow-300 text-sm font-semibold">
+👥 <span id="count">0</span>+ Members
+</p>
+</div>
 
-  <div class="mt-8">
-    <a href="https://t.me/+vIeU26SoIvhiNTE1">
-      <button class="neon-btn">JOIN THE BIG BULL TELEGRAM</button>
-    </a>
-  </div>
+</div>
 
-  <p class="mt-4 text-sm font-extrabold uppercase">
-    💸 THE BIG BULL <br> Cricket Tipping Ka Sher 🐂👑
-  </p>
+<!-- TELEGRAM BUTTON -->
+<a href="https://t.me/+Rzp5wo7o8T02ODZl" target="_blank" class="block pulse-btn mb-6">
 
-  <div class="mt-auto pt-4 pb-2 ads-credit">ADS_SETUP BY @MRXSETUP</div>
+<div class="bg-gradient-to-r from-yellow-600 to-red-600 p-5 rounded-xl shadow-xl shine">
+
+<div class="flex justify-center items-center gap-3 text-xl font-bold">
+JOIN TELEGRAM NOW
+</div>
+
+</div>
+</a>
+
+<!-- FEATURES -->
+<div class="space-y-3">
+
+<div class="bg-white/5 p-4 rounded-xl">✔ Expert Cricket Analysis</div>
+<div class="bg-white/5 p-4 rounded-xl">⚡ Live Match Updates</div>
+<div class="bg-white/5 p-4 rounded-xl">👥 Strong Cricket Community</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="text-center text-xs text-gray-400 mt-6 border-t border-white/10 pt-4">
+For entertainment only<br>
+<span class="text-yellow-400 font-semibold">Advertise BY CAPTAIN</span>
+</div>
+
 </div>
 </div>
 
 <script>
-let t=30,el=document.getElementById("countdown");
-let i=setInterval(()=>{
-  el.textContent=t;
-  t--;
-  if(t<0){
-    clearInterval(i);
-    el.textContent="0";
-  }
-},1000);
+// Smooth Members Counter (0 → 110,000)
+let count = document.getElementById("count");
+let target = 110000;
+let current = 0;
+
+let counter = setInterval(() => {
+current += Math.ceil(target / 250);
+if (current >= target) {
+current = target;
+clearInterval(counter);
+}
+count.innerText = current.toLocaleString();
+}, 30);
 </script>
 
 </body>
